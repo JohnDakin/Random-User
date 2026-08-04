@@ -13,7 +13,11 @@ async function getRandomUser(url){
     let data = await response.json()
     // console.log(`${data.results[0].name.first} ${data.results[0].name.last} is ${data.results[0].gender} in gender`);
     // console.log(data.results[0].picture.large)
-    console.log(data);
+    // console.log(data);
+    // console.log(data.results[0].email);
+    // console.log(data.results[0].location.country);
+    // console.log(data.results[0].location.city);
+
 
     let randomUserImage = data.results[0].picture.large;
     let randomUserNameObject = data.results[0].name; 
@@ -21,11 +25,14 @@ async function getRandomUser(url){
     let htmlGender = document.getElementById("userGender");
     let htmlUsername = document.getElementById("userName");
     let loginDetail = document.getElementById("loginDetail");
+    let emailAddress = document.getElementById("emailAddress");
+    let location = document.getElementById("location");
+    const locationObject = data.results[0].location;
     let loginDetailObject = data.results[0].login;
-    console.log(loginDetailObject);
+    // console.log(loginDetailObject);
 
     loginDetail.innerHTML = "";
-    
+
     for(let detail in loginDetailObject){
       loginDetail.innerHTML += `<p>${detail}: ${loginDetailObject[detail]}</p>`
     }
@@ -33,6 +40,8 @@ async function getRandomUser(url){
 
     htmlImage.src =  randomUserImage;
     htmlUsername.innerText = `Username: ${randomUserNameObject.title}. ${randomUserNameObject.first} ${randomUserNameObject.last}`;
+    emailAddress.innerText = `Email: ${data.results[0].email}`;
+    location.innerText = `City: ${locationObject.city}, Country: ${locationObject.country}`;
 
     htmlImage.style.display = "block";
     htmlGender.innerText  = `Gender: ${data.results[0].gender.charAt(0).toUpperCase() + data.results[0].gender.slice(1)}`;
