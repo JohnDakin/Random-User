@@ -1,0 +1,41 @@
+body{
+  font-family: Arial;
+  padding: 0;
+  margin: 10px 0px 0px 10px;
+  background-color: #ffcc33;
+}
+.clickBtn{
+  color:  black;
+  background-color: rgb(55, 205, 224);
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  display: block;
+}
+
+.randomImage{
+  width: 100px;
+  object-fit: contain;
+  object-position: center;
+  border: 3px solid green;
+  border-radius: 56px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.detailParagraph{
+  font-weight: 500;
+}
+
+footer{
+  font-size: 15px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+
+}
+span{
+  font-weight: 900;
+}
