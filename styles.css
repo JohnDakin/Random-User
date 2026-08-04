@@ -15,10 +15,6 @@ body {
   height: 100vh;
 }
 
-
-
-
-/* --------------------------- */
 .clickBtn{
   color:  black;
   background-color: rgb(55, 205, 224);
@@ -43,18 +39,6 @@ body {
 .gender{
   font-weight: 500;
 }
-
-/* footer{
-  font-size: 15px;
-  position: fixed;
-  bottom: 10px;
-  /* left: 10px; 
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-
-} 
-*/
 
 footer {
   position: fixed;
