@@ -12,8 +12,23 @@
 <body>
   <button onclick="getRandomUser(url)" class="clickBtn">Click to Get Random User</button>
   <img src="" alt="Random User Image" style="display: none" id="randomUserImage" class="randomImage">
-  <p id="userDetail" class="detailParagraph"></p>
-  <footer>Made with ❤️ by <span>John Dakin</span></footer>
+  <div class="userDetails" id="userDetails">
+    <p class="userName" id="userName"></p>
+    <p id="userGender" class="gender"></p>
+    <div class="nestedContainer" id="loginDetail">
+
+    </div>
+  </div>
+  <!-- <footer>Made with ❤️ by <span>John Dakin</span></footer> -->
+  <footer>
+  <span>Made with ❤️ by <strong>John Dakin</strong></span>
+
+  <a href="https://github.com/JohnDakin" target="_blank">
+    <strong>GitHub</strong>
+    <img src="https://github.com/JohnDakin.png" alt="GitHub Profile">
+  </a>
+</footer>
+
   <script src="scripts.js"></script>
 </body>
 </html>

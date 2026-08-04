@@ -25,17 +25,53 @@ body{
   margin-bottom: 10px;
 }
 
-.detailParagraph{
+.gender{
   font-weight: 500;
 }
 
-footer{
+/* footer{
   font-size: 15px;
   position: fixed;
   bottom: 10px;
-  left: 10px;
+  /* left: 10px; 
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
 
+} 
+*/
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  font-size: 15px;
 }
+
+footer img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* Space between "GitHub" and the image */
+  text-decoration: none;
+  color: inherit;
+}
+
+footer strong {
+  font-weight: bold;
+}
+
 span{
-  font-weight: 900;
+  font-weight: 300;
 }
