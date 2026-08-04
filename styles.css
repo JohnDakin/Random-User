@@ -1,7 +1,9 @@
 html, body {
-  margin: 0;
   padding: 0;
+  margin: 10px 0px 0px 10px;
   overflow-x: hidden;
+  background-color: #ffcc33;
+  font-family: Arial;
 }
 
 * {
@@ -17,12 +19,6 @@ body {
 
 
 /* --------------------------- */
-body{
-  font-family: Arial;
-  padding: 0;
-  margin: 10px 0px 0px 10px;
-  background-color: #ffcc33;
-}
 .clickBtn{
   color:  black;
   background-color: rgb(55, 205, 224);
