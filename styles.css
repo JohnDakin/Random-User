@@ -45,22 +45,19 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-
   padding: 8px 15px;
   background-color: #ffcc33;
-
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-
   font-size: 15px;
   z-index: 100;
 }
 
 footer span,
 footer a {
-  white-space: nowrap; /* Prevent text from wrapping */
+  white-space: nowrap;
 }
 
 footer img {

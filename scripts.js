@@ -4,19 +4,12 @@ const url = "https://randomuser.me/api/";
 async function getRandomUser(url){
   try{
     let response = await fetch(url);
-    // console.log(response);
 
     if(!response.ok){
       throw new Error("Unable to fetch resource, Response: ", response.status)
     }
 
     let data = await response.json()
-    // console.log(`${data.results[0].name.first} ${data.results[0].name.last} is ${data.results[0].gender} in gender`);
-    // console.log(data.results[0].picture.large)
-    // console.log(data);
-    // console.log(data.results[0].email);
-    // console.log(data.results[0].location.country);
-    // console.log(data.results[0].location.city);
 
 
     let randomUserImage = data.results[0].picture.large;
@@ -29,7 +22,6 @@ async function getRandomUser(url){
     let location = document.getElementById("location");
     const locationObject = data.results[0].location;
     let loginDetailObject = data.results[0].login;
-    // console.log(loginDetailObject);
 
     loginDetail.innerHTML = "";
 
